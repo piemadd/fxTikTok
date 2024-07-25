@@ -40,7 +40,7 @@ app.get('/', (c) => {
   return new Response('', {
     status: 302,
     headers: {
-      Location: 'https://github.com/okdargy/fxtiktok'
+      Location: 'https://github.com/piemadd/fxTikTok'
     }
   })
 })
@@ -120,7 +120,7 @@ async function handleVideo(c: any): Promise<Response> {
     const extensions = ['mp4', 'png', 'jpg', 'jpeg', 'webp', 'webm']
 
     if (
-      url.hostname.includes('d.tnktok.com') ||
+      url.hostname.includes('dtiktok.pgm.sh') ||
       c.req.query('isDirect') === 'true' ||
       extensions.some((suffix) => c.req.path.endsWith(suffix))
     ) {
@@ -128,14 +128,14 @@ async function handleVideo(c: any): Promise<Response> {
         return new Response('', {
           status: 302,
           headers: {
-            Location: 'https://fxtiktok-rewrite.dargy.workers.dev/generate/video/' + videoInfo.id
+            Location: 'https://fxtiktok-rewrite.piero.workers.dev/generate/video/' + videoInfo.id
           }
         })
       } else {
         return new Response('', {
           status: 302,
           headers: {
-            Location: 'https://fxtiktok-rewrite.dargy.workers.dev/generate/image/' + videoInfo.id
+            Location: 'https://fxtiktok-rewrite.piero.workers.dev/generate/image/' + videoInfo.id
           }
         })
       }

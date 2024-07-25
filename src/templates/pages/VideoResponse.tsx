@@ -3,7 +3,7 @@ import { ItemStruct } from '../../types/Web'
 import { formatNumber } from '../../util/format'
 
 export function VideoResponse(data: ItemStruct): JSX.Element {
-  let videoUrl = 'https://fxtiktok-rewrite.dargy.workers.dev/generate/video/' + data.id
+  let videoUrl = 'https://fxtiktok-rewrite.piero.workers.dev/generate/video/' + data.id
 
   // NOTE - This snippet was used to get a dynamic URL from the TikTok API but now we are mainly using web scraping to get the video data, which doesn't provide a dynamic URL
   /*
@@ -60,7 +60,7 @@ export function VideoResponse(data: ItemStruct): JSX.Element {
         ...videoMeta,
         {
           name: 'og:image',
-          content: "https://fxtiktok-rewrite.dargy.workers.dev/generate/image/" + data.id + "?index=" + i
+          content: "https://fxtiktok-rewrite.piero.workers.dev/generate/image/" + data.id + "?index=" + i
         },
         {
           name: 'og:image:type',

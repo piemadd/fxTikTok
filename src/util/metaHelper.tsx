@@ -7,7 +7,7 @@ export default function MetaHelper(
     [key: string]: string | number
   }
 ): JSX.Element {
-  let alternateUrl = new URL('https://fxtiktok-rewrite.dargy.workers.dev/generate/alternate')
+  let alternateUrl = new URL('https://fxtiktok-rewrite.piero.workers.dev/generate/alternate')
 
   if (alternate) {
     for (const key in alternate) {
