@@ -120,7 +120,7 @@ async function handleVideo(c: any): Promise<Response> {
     const extensions = ['mp4', 'png', 'jpg', 'jpeg', 'webp', 'webm']
 
     if (
-      url.hostname.includes('dtiktok.pgm.sh') ||
+      url.hostname.includes('tiktokd.pgm.sh') ||
       c.req.query('isDirect') === 'true' ||
       extensions.some((suffix) => c.req.path.endsWith(suffix))
     ) {
